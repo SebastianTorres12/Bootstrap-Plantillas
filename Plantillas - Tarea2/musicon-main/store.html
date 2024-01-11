@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <title>Musicon</title>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- EXTERNSL CSS  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- HANDLEBARS SCRIPT -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.8/handlebars.min.js"
+      integrity="sha512-E1dSFxg+wsfJ4HKjutk/WaCzK7S2wv1POn1RRPGh8ZK+ag9l244Vqxji3r6wgz9YBf6+vhQEYJZpSjqWFPg9gg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- HANDLEBARS TEMPLATE -->
+    <script id="templateHB" type="text/x-handlebars-template">
+      {{#each instruments}}
+        <article class="instrument">
+          <img class="image" src="{{this.image}}" alt="{{this.name}}" />
+          <section class="details">
+            <h2 class="name">{{this.name}}</h2>
+            <p class="description">{{this.description}}</p>
+            {{#if sale}}
+              <p class="price"><del>Price: {{this.price}}</del></p>
+              <p class="sale">On Sale! {{this.sale}}</p>
+            {{else}}
+              <p class="price">Price: {{this.price}}</p>
+            {{/if}}
+          </section>
+        </article>
+      {{/each}}
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <div class="container header-container">
+        <h1 class="branding">Musicon</h1>
+        <nav class="desktop-navbar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li id="current"><a href="store.html">Store</a></li>
+            <li><a href="#" class="btn-black">Sign Up</a></li>
+          </ul>
+        </nav>
+        <div class="burger" onclick="toggleNavbar()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav class="mobile-navbar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="#" class="btn-black">Sign Up</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <article id="showcase">
+      <section
+        class="container instrument-container"
+        id="information"
+      ></section>
+    </article>
+
+    <footer>
+      <div class="container footer-container">
+        <div class="footer-section">
+          <h3>MUSICON</h3>
+          <p class="footer-slogan">In tune with trends, in harmony with you.</p>
+          <div class="footer-social">
+            <a href="#">
+              <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                <use href="assets/icons.svg#icon-fb" />
+              </svg>
+            </a>
+            <a href="#">
+              <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                <use href="assets/icons.svg#icon-instagram" />
+              </svg>
+            </a>
+            <a href="#">
+              <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                <use href="assets/icons.svg#icon-x" />
+              </svg>
+            </a>
+            <a href="#">
+              <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                <use href="assets/icons.svg#icon-telegram" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Store</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <ul>
+            <li><a href="#">Legal</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/mobileMenu.js"></script>
+  </body>
+</html>
