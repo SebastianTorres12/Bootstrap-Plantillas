@@ -1,48 +1,48 @@
 const context = {
-  prefix1: "Let's",
-  mainTitle: "Explore",
-  prefix2: "Unique",
-  subTitle: "Melodies.",
-  buttonText: "Shop Now",
-  imgAlt: "Guitars",
-  body: "Join us in delivering the euphoric vibrations of melodia to the citizens of the world!",
-  text: "Musicon is a budding musical storefront with a mission to share the joy of music. These magnificent auditory tools are designed with musical creators, like you, in mind. Hobbyists, beginners, and experts alike can appreciate the resplendent sounds supplied by each and every instrument we carry. ",
+  prefix1: "",
+  mainTitle: "Exploremos",
+  prefix2: "Melodías",
+  subTitle: "Únicas.",
+  buttonText: "Comprar Ahora",
+  imgAlt: "Guitarras",
+  body: "¡Únase a nosotros para transmitir las vibraciones eufóricas de la melodía a los ciudadanos del mundo!",
+  text: "Guru's Music es una tienda musical en ciernes con la misión de compartir la alegría de la música. Estas magníficas herramientas auditivas están diseñadas pensando en creadores musicales, como usted. Tanto los aficionados como los principiantes y los expertos pueden apreciar los resplandecientes sonidos proporcionados por todos y cada uno de ellos. instrumento que llevamos.",
   instruments: [
     {
       image: "assets/electronic-keyboard.jpg",
-      name: "Electronic Keyboard",
+      name: "Teclado eléctrico",
       description:
-        "A piano welcomed to the 21th century. Pianists celebrate the compact form factor and the diversity of synthesized rhythms all in one masterful musical machine.",
+      "Un piano bienvenido al siglo XXI. Los pianistas celebran el factor de forma compacto y la diversidad de ritmos sintetizados, todo en una máquina musical magistral",
       price: "$1,999.00",
       sale: "$1,699.89",
     },
     {
       image: "assets/electric-guitar.jpg",
-      name: "Electric Guitar",
+      name: "Guitarra Eléctrica",
       description:
-        "Join the legends of the '50s and '60s when the marriage of guitar and electricity created the most influential instrument of a generation. Note: picks sold separately.",
+      "Únete a las leyendas de los años 50 y 60, cuando la unión de la guitarra y la electricidad creó el instrumento más influyente de una generación. Nota: las púas se venden por separado",
       price: "$599.99",
     },
     {
       image: "assets/bass-guitar.jpg",
-      name: "Bass Guitar",
+      name: "Bajo",
       description:
-        "Experience the embodiment of funkadelic frequencies that is the bass guitar. Let the deep low notes of the bass guitar resonate with heartbeats everywhere.",
+      "Experimente las frecuencias funk del bajo. Deje que las notas graves y profundas del bajo resuenan con los latidos del corazón en todas partes",
       price: "$624.99",
     },
     {
       image: "assets/drum-kit.jpg",
-      name: "Drum Kit",
+      name: "Kit de batería",
       description:
-        'Ever thought, "one instrument isn\'t enough?" Find an answer in the drum kit. Coordinate a collections of drums and cymbals to dictate the rhythm of musical masterpiece.',
+        '¿Alguna vez has pensado: "un instrumento no es suficiente?" Encuentra una respuesta en este set de batería. Coordina una colección de tambores y platillos para dictar el ritmo de una obra maestra musical.',
       price: "$649.00",
       sale: "$349.00",
     },
     {
       image: "assets/violin.jpg",
-      name: "Violin",
+      name: "Violín",
       description:
-        "A versatile instrument that is suited for any and all occasions. Those wearing tuxedos can strum together a classic. Others who prefer overalls can call it a fiddle and play some folk songs.",
+        "Un instrumento versátil que se adapta a todas y cada una de las ocasiones.",
       price: "$245.00",
     },
   ],
